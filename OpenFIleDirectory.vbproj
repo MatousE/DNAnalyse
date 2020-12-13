@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E560710B-4E71-4938-889D-51D197C0AD0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>OpenFIleDirectory</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OpenFIleDirectory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OpenFIleDirectory.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasketofLengthsCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGContentCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CGContentForm.Designer.vb">
+      <DependentUpon>CGContentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CGContentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasketofLengths.Designer.vb">
+      <DependentUpon>BasketofLengths.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BasketofLengths.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodonUsage.Designer.vb">
+      <DependentUpon>CodonUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodonUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CpGIslandForm.Designer.vb">
+      <DependentUpon>CpGIslandForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CpGIslandForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateRandomDNAseq.Designer.vb">
+      <DependentUpon>GenerateRandomDNAseq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateRandomDNAseq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputBasketSeqs.Designer.vb">
+      <DependentUpon>OutputBasketSeqs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputBasketSeqs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainClass.Designer.vb">
+      <DependentUpon>MainClass.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputCodonUsage.Designer.vb">
+      <DependentUpon>OutputCodonUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputCodonUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputCpGIslands.Designer.vb">
+      <DependentUpon>OutputCpGIslands.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputCpGIslands.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputRandomDNASeq.Designer.vb">
+      <DependentUpon>OutputRandomDNASeq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputRandomDNASeq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputRegExprSeqs.Designer.vb">
+      <DependentUpon>OutputRegExprSeqs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputRegExprSeqs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputSASCodon.Designer.vb">
+      <DependentUpon>OutputSASCodon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OutputSASCodon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCRPrimerStatsForm.Designer.vb">
+      <DependentUpon>PCRPrimerStatsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PCRPrimerStatsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegularExpressionClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegularExpUIForm.Designer.vb">
+      <DependentUpon>RegularExpUIForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegularExpUIForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeqCompareForm.Designer.vb">
+      <DependentUpon>SeqCompareForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeqCompareForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeanMedianModeForm.Designer.vb">
+      <DependentUpon>MeanMedianModeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MeanMedianModeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeanMedianMode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PercentageCAGT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PercantageCAGTForm.Designer.vb">
+      <DependentUpon>PercantageCAGTForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PercantageCAGTForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeqSearchForm.Designer.vb">
+      <DependentUpon>SeqSearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeqSearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SitesOutput.Designer.vb">
+      <DependentUpon>SitesOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SitesOutput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartAndStopCodonGetSeq.Designer.vb">
+      <DependentUpon>StartAndStopCodonGetSeq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartAndStopCodonGetSeq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranslationMap.Designer.vb">
+      <DependentUpon>TranslationMap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TranslationMap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CGContentForm.resx">
+      <DependentUpon>CGContentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasketofLengths.resx">
+      <DependentUpon>BasketofLengths.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodonUsage.resx">
+      <DependentUpon>CodonUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CpGIslandForm.resx">
+      <DependentUpon>CpGIslandForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateRandomDNAseq.resx">
+      <DependentUpon>GenerateRandomDNAseq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainClass.resx">
+      <DependentUpon>MainClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeanMedianModeForm.resx">
+      <DependentUpon>MeanMedianModeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputBasketSeqs.resx">
+      <DependentUpon>OutputBasketSeqs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputCodonUsage.resx">
+      <DependentUpon>OutputCodonUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputCpGIslands.resx">
+      <DependentUpon>OutputCpGIslands.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputRandomDNASeq.resx">
+      <DependentUpon>OutputRandomDNASeq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputRegExprSeqs.resx">
+      <DependentUpon>OutputRegExprSeqs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputSASCodon.resx">
+      <DependentUpon>OutputSASCodon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCRPrimerStatsForm.resx">
+      <DependentUpon>PCRPrimerStatsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PercentageCAGT.resx">
+      <DependentUpon>PercentageCAGT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PercantageCAGTForm.resx">
+      <DependentUpon>PercantageCAGTForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegularExpUIForm.resx">
+      <DependentUpon>RegularExpUIForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeqCompareForm.resx">
+      <DependentUpon>SeqCompareForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeqSearchForm.resx">
+      <DependentUpon>SeqSearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SitesOutput.resx">
+      <DependentUpon>SitesOutput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartAndStopCodonGetSeq.resx">
+      <DependentUpon>StartAndStopCodonGetSeq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranslationMap.resx">
+      <DependentUpon>TranslationMap.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
